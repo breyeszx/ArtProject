@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="superior">
-        <nav>
-            <ul>
-                <li><a href=#>Inicio</a></li>
-                <li><a href="/vistas/semestres.html">Semestres/a></li>
-                <li><a href="contact.html">Noticias</a></li>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <!-- Agregamos una clase "dropdown" al elemento li que tendrá elementos desplegables -->
+          <li class="dropdown">
+            <a href="#">Semestres</a>
+            <!-- Creamos un elemento ul dentro del elemento li para los elementos desplegables -->
+            <ul class="dropdown-content">
+              <li><a href="/vistas/semestres.html">Semestre 1</a></li>
+              <li><a href="/vistas/semestres.html">Semestre 2</a></li>
+              <!-- Agrega más elementos según sea necesario -->
             </ul>
-        </nav>
+          </li>
+          <li><a href="vistas/Noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>
